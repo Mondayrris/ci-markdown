@@ -534,12 +534,12 @@ class Markdown
      *
      * @param array $params Override settings configured in config/markdown.php.
      */
-    public function __construct(array $params = array())
+    public function __construct($params = array())
     {
         //
         // CI Init
         $CI = &get_instance();
-        $CI->load->config('markdown', true, true);
+        $CI->load->config('markdown/markdown', true, true);
         $config_file = $CI->config->item('markdown');
         if (is_array($params) && !empty($params)) {
             $this->initialize(array_replace_recursive($config_file, $params));
