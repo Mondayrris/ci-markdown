@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="<?= base_url()?>assets/node_modules/bootstrap/dist/css/boostrap.min.css">
+<link rel="stylesheet" href="<?= base_url()?>assets/css/front.css">
 <div id="context">
 	<h1 class="pt-5">Markdown</h1>
 	<div id="capture">
