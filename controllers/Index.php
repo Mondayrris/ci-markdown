@@ -7,11 +7,10 @@ class Index extends MX_Controller
     {
         parent::__construct();
 
-        $a = require_once APPPATH . 'modules/markdown/config/markdown.php';
         $this->load->helper('markdown');
     }
 
-    public function index($filename)
+    public function load($filename)
     {
         $view = markdown_view($filename . '.md');
         return $this->load->view('index', ['html' => $view]);
