@@ -1,6 +1,6 @@
 <?php
 
-function markdown_view($markdown, $raw = false, $prefix = APPPATH . '../archives/markdown/')
+function markdown_view($markdown, $raw = false, $prefix = APPPATH . '../sphinx/docs/')
 {
     $file = $prefix . $markdown;
     if (!file_exists($file)) throw new Exception('Markdown file is not found in ' . $file);
